@@ -146,6 +146,10 @@ nav > div:hover {
     color: #4c4cfc;
     transition: 0.3s;
 }
+a:hover {
+    color: #4c4cfc;
+    transition: 0.3s;
+}
 .about_me {
     display: flex;
     width: 60%;
@@ -157,9 +161,16 @@ nav > div:hover {
     font-weight: 200;
     opacity: 0.8;
 }
+.description p {
+    text-indent: 20px;
+}
+.description {
+    margin-bottom: 15px;
+}
 
 .photo > img {
-    width: 600px;
+    min-width: 250px;
+    width: 250px;
     border-radius: 5px;
 }
 .photo {
@@ -193,6 +204,7 @@ nav > div:hover {
 }
 .education {
     display: grid;
+    margin-top: 40px;
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
@@ -200,6 +212,7 @@ nav > div:hover {
     margin: 0 auto;
     width: 60%;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 .experience h2 {
     margin-bottom: 15px;
@@ -209,7 +222,43 @@ nav > div:hover {
     color: grey;
     margin: 2px 0 2px 0;
 }
+.project_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+.project_list h3 {
+    margin-top: 10px;
+    font-weight: 540;
+    font-size: 20px;
+}
+.project_list p {
+    font-size: 16px;
+    color: grey;
+}
+.slider_line {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+}
 
-.portfolio img {
-    width: 300px;
+.slider_line img {
+    transition: 0.6s;
+}
+.slider_line img:hover {
+    transform: scale(1.1);
+    width: initial;
+    height: 100%;
+}
+
+.container {
+    border-bottom: 0.5px solid rgb(211, 210, 210);
+    padding-bottom: 15px;
+}
+
+.git {
+    width: 25px;
+    height: 25px;
 }
