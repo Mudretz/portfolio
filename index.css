@@ -272,6 +272,7 @@ a:hover {
         display: none;
     }
 
+
     .about_me {
         display: grid;
         grid-gap: 20px;
@@ -286,6 +287,9 @@ a:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
 
+    }
+    .header_item {
+        width: 80%;
     }
     .skills, .education, .experience, .portfolio {
         margin: 0 auto;
