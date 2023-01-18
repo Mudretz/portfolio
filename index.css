@@ -267,7 +267,7 @@ a:hover {
 
 /*Media запросы*/
 
-@media screen and (min-width: 0) and (max-width: 780px) {
+@media screen and (min-width: 0) and (max-width: 900px) {
     nav {
         display: none;
     }
@@ -277,6 +277,9 @@ a:hover {
         grid-gap: 20px;
         grid-template-columns: 1fr;
         width: 80%;
+    }
+    .description {
+        text-align: justify;
     }
 
     .info_skills {
