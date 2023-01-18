@@ -152,6 +152,15 @@ a:hover {
     color: #4c4cfc;
     transition: 0.3s;
 }
+.columns_menu {
+    width: 35px;
+    height: 5px;
+    background-color: #4c4cfc;
+    margin: 6px 0;
+}
+.menu {
+    display: none;
+}
 /*Оформление раздела Обо мне*/
 .about_me {
     display: flex;
@@ -268,7 +277,7 @@ a:hover {
 /*Media запросы*/
 
 @media screen and (min-width: 0) and (max-width: 900px) {
-    nav {
+    .nav_item {
         display: none;
     }
 
@@ -302,6 +311,9 @@ a:hover {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
+    }
+    .menu {
+        display: block;
     }
 
 }
