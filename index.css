@@ -290,9 +290,10 @@ a:hover {
     }
     .description {
         text-align: justify;
+	margin-right: 25px;
     }
     .info_me {
-        margin-right: 0px;
+        margin-right: 25px;
     }
     .info_skills {
         grid-template-columns: 1fr;
