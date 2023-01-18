@@ -90,6 +90,7 @@ label {
 legend {
 	display: block;
 }
+/*Глобальные стили*/
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
@@ -113,6 +114,7 @@ h2 {
     opacity: 0.9;
     margin-bottom: 15px;
 }
+/*Оформление header*/
 .header {
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
     position: sticky;
@@ -150,6 +152,7 @@ a:hover {
     color: #4c4cfc;
     transition: 0.3s;
 }
+/*Оформление раздела Обо мне*/
 .about_me {
     display: flex;
     width: 60%;
@@ -182,6 +185,7 @@ a:hover {
     flex-direction: column;
     margin-right: 100px;
 }
+/*Оформление раздела Навыки*/
 .skills, .education {
     margin: 0 auto;
     width: 60%;
@@ -202,6 +206,7 @@ a:hover {
     box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
     padding: 15px;
 }
+/*Оформление раздела Образование и опыт работы*/
 .education {
     display: grid;
     margin-top: 40px;
@@ -222,6 +227,7 @@ a:hover {
     color: grey;
     margin: 2px 0 2px 0;
 }
+/*Оформление раздела Портфолио*/
 .project_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,7 +264,35 @@ a:hover {
     padding-bottom: 15px;
 }
 
-.git {
-    width: 25px;
-    height: 25px;
+
+/*Media запросы*/
+
+@media screen and (min-width: 0) and (max-width: 780px) {
+    nav {
+        display: none;
+    }
+
+    .about_me {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .info_skills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+    .skills, .education, .experience, .portfolio {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .project_list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
 }
