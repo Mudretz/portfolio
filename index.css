@@ -283,7 +283,7 @@ a:hover {
         text-align: justify;
     }
     .info_me {
-        margin-right: 0px;
+        margin-right: 10px;
     }
     .info_skills {
         grid-template-columns: 1fr;
