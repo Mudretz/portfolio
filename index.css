@@ -102,7 +102,7 @@ body {
 }
 main {
     display: grid;
-    grid-gap: 50px; 
+    grid-gap: 50px;
 }
 h3 {
     font-size: 1.1em;
@@ -161,6 +161,7 @@ a:hover {
 .menu {
     display: none;
 }
+
 /*Оформление раздела Обо мне*/
 .about_me {
     display: flex;
@@ -273,6 +274,23 @@ a:hover {
     padding-bottom: 15px;
 }
 
+/*Модальное окно меню*/
+.modal_menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+    height: 40%;
+    background-color: white;
+    z-index: 1000;
+    padding-top: 30px;
+}
+
+.vision {
+    display: none;
+}
 
 /*Media запросы*/
 
@@ -280,8 +298,6 @@ a:hover {
     .nav_item {
         display: none;
     }
-
-
     .about_me {
         display: grid;
         grid-gap: 20px;
@@ -290,15 +306,13 @@ a:hover {
     }
     .description {
         text-align: justify;
-	margin-right: 25px;
+	    margin-right: 20px;
     }
     .info_me {
-        margin-right: 25px;
+        margin-right: 20px;
     }
     .info_skills {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
     }
     .header_item {
         width: 80%;
@@ -315,6 +329,6 @@ a:hover {
     }
     .menu {
         display: block;
+        cursor: pointer;
     }
-
 }
