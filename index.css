@@ -199,7 +199,7 @@ a:hover {
 .skills, .education {
     margin: 0 auto;
     width: 60%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .skills h2 {
     margin-bottom: 15px;
@@ -219,15 +219,15 @@ a:hover {
 /*Оформление раздела Образование и опыт работы*/
 .education {
     display: grid;
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
 .experience, .portfolio {
     margin: 0 auto;
     width: 60%;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .experience h2 {
     margin-bottom: 15px;
