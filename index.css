@@ -334,3 +334,16 @@ a:hover {
         cursor: pointer;
     }
 }
+
+
+.telegram {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+.gitHub {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+}
